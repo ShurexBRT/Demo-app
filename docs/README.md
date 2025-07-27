@@ -1,3 +1,5 @@
+![CI](https://github.com/ShurexBRT/Demo-app/actions/workflows/ci.yml/badge.svg)
+
 #QA Demo App – Automation Challenge (React + Node.js)
 
 This is a simple full-stack application created for a QA Automation technical challenge.  
