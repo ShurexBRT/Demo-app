@@ -56,6 +56,10 @@ jobs:
       working-directory: frontend
       run: chmod +x ./node_modules/.bin/*
 
+    - name: Install Cypress binary
+      working-directory: frontend
+      run: npx cypress install  
+
     - name: Build frontend
       working-directory: frontend
       run: npm run build
