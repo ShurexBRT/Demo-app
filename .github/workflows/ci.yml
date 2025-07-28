@@ -52,9 +52,9 @@ jobs:
       working-directory: frontend
       run: npm install
 
-    - name: Give exec permissions to vite
+    - name: Give exec permissions to all node binaries
       working-directory: frontend
-      run: chmod +x ./node_modules/.bin/vite
+      run: chmod +x ./node_modules/.bin/*
 
     - name: Build frontend
       working-directory: frontend
