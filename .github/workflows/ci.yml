@@ -48,6 +48,14 @@ jobs:
         JWT_SECRET: testsecret
       run: npm run test:api
 
+    - name: Install dependencies
+      working-directory: frontend
+      run: npm install
+
+    - name: Give exec permissions to vite
+      working-directory: frontend
+      run: chmod +x ./node_modules/.bin/vite
+
     - name: Build frontend
       working-directory: frontend
       run: npm run build
@@ -55,4 +63,5 @@ jobs:
     - name: Run Cypress tests
       working-directory: frontend
       run: npm run test:e2e
+
         
