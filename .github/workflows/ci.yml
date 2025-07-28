@@ -50,7 +50,7 @@ jobs:
 
     - name: Install frontend dependencies
       working-directory: frontend
-      run: npm install
+      run: npm ci
 
     - name: Give exec permissions to node_modules binaries
       working-directory: frontend
