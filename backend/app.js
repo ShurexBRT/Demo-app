@@ -12,3 +12,5 @@ app.use('/api/users', userRoutes);
 app.use('/api/notes', noteRoutes);
 
 module.exports = app;
+
+app.get('/api/health', (req, res) => res.status(200).json({ status: 'ok' }));

@@ -39,7 +39,7 @@ jobs:
       run: npm run start & 
       
     - name: Wait for backend to be ready
-      run: npx wait-on http://localhost:5000/api/health || npx wait-on http://localhost:5000
+      run: npx wait-on http://localhost:5000/api/health
 
     - name: Seed test user
       working-directory: backend
