@@ -14,7 +14,7 @@
   "scripts": {
   "dev": "vite --host",
   "cy:run": "cypress run",
-  "test:e2e": "start-server-and-test dev http://10.1.0.248:5173 cy:run --timeout 120000"
+  "test:e2e": "start-server-and-test dev http://127.0.0.1:5173cy:run --timeout 120000"
 }
 
 }
