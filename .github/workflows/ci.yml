@@ -33,6 +33,10 @@ jobs:
     - name: Install backend dependencies
       working-directory: backend
       run: npm install
+  
+    - name: Give exec permissions to all node binaries (backend)
+      working-directory: backend
+      run: chmod +x ./node_modules/.bin/*   
 
     - name: Start backend server
       working-directory: backend
