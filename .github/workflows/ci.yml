@@ -52,6 +52,10 @@ jobs:
       working-directory: frontend
       run: npm install
 
+    - name: Give exec permissions to node_modules binaries
+      working-directory: frontend
+      run: chmod +x ./node_modules/.bin/*  
+
     - name: Run Cypress tests (headless)
       working-directory: frontend
       run: |
