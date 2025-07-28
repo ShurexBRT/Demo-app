@@ -55,8 +55,5 @@ jobs:
     - name: Run Cypress tests (headless)
       working-directory: frontend
       run: |
-        chmod +x ./node_modules/.bin/vite
-        npm run dev 
-        npx wait-on http://localhost:5173
-        npx cypress run
+        npm run test:e2e
         
