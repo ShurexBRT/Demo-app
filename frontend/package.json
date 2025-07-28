@@ -14,7 +14,8 @@
     "wait-on": "^8.0.4"
   },
   "scripts": {
-  "dev": "vite preview --port 5173",
+  "dev": "vite --host",     
+  "preview": "vite preview",
   "cy:run": "cypress run",
   "test:e2e": "start-server-and-test dev http://localhost:5173 cy:run"
 }
