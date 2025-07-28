@@ -14,10 +14,11 @@
     "wait-on": "^8.0.4"
   },
   "scripts": {
-  "dev": "vite --host",     
+  "dev": "vite --host 0.0.0.0 --port 5173",     
   "preview": "vite preview",
   "cy:run": "cypress run",
-  "test:e2e": "start-server-and-test dev http://localhost:5173 cy:run"
+  "test:e2e": "START_SERVER_AND_TEST_TIMEOUT=60000 start-server-and-test dev http://127.0.0.1:5173 cy:run"
+
 }
 
 }
