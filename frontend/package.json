@@ -12,7 +12,7 @@
     "wait-on": "^8.0.4"
   },
   "scripts": {
-  "dev": "vite",
+  "dev": "vite --host",
   "cy:run": "cypress run",
   "test:e2e": "start-server-and-test dev http://localhost:5173 cy:run"
 }
