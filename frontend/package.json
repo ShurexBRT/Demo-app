@@ -16,6 +16,8 @@
     "wait-on": "^8.0.4"
   },
   "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
     "build": "vite build",
     "start": "serve -s dist -l 5173",
     "cy:run": "cypress run",

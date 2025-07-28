@@ -18,6 +18,8 @@ function Login() {
         password
       });
 
+       console.log("LOGIN RESPONSE:", res.data);
+
       localStorage.setItem('token', res.data.token);
       navigate('/dashboard');
     } catch (err) {
