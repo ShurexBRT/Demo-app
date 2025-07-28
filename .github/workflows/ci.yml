@@ -56,6 +56,9 @@ jobs:
       working-directory: frontend
       run: chmod +x ./node_modules/.bin/*  
 
+    - name: Install Vite React plugin
+      run: npm install @vitejs/plugin-react --save-dev  
+
     - name: Run Cypress tests (headless)
       working-directory: frontend
       run: |
